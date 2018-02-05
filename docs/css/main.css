@@ -337,6 +337,7 @@ a.mouse_scroll:focus {
   display: block;
   font-size: 38px;
   z-index: 2;
+  cursor: pointer;
 }
 @media only screen and (min-width: 768px) {
   .navigation .navigation-toggle {
