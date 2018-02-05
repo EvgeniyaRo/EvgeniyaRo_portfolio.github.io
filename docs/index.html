@@ -6,17 +6,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<!-- Titles -->
-	<title>Портфолио</title>
+	<title>Персональный сайт-портфолио Родиной Евгении</title>
 	<meta name="keywords" content="Ключевые слова...">
     <meta name="description" content="Описание страницы...">
 
 	<!-- Syles -->
-	<link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
 
 	<!-- FavIcons -->
 	<link rel="shortcut icon" href="img/favicons/favicon-48x48.ico"  type="image/x-icon" />
     <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+	<!-- Fonts -->
+    <link rel="stylesheet" href="fonts/noto-webfont/noto.css">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 	
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -36,9 +39,41 @@
 
 
 <!-- шапка -->
-	<div class="block">
-		Шапка
-	</div>
+	<header class="header">
+		<div class="header__inner">
+			<nav class="navigation">
+				<div class="navigation-toggle navigation-toggle--fixed">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</div>
+				<ul class="navigation-list">
+					<li><a href="#">резюме</a></li>
+					<li><a href="#">портфолио</a></li>
+					<li><a href="#">контакты</a></li>
+				</ul>
+			</nav>
+			<div class="header__inner--center">
+				<div class="avatar avatar--shadow">
+					<img src="usercontent/img/p-s.jpg" alt="Родина Евгения">
+				</div>
+				<h1 class="header__title">
+					Родина Евгения
+				</h1>
+				<h2 class="header__subtitle">
+					HTML верстка сайтов
+				</h2>
+			</div>
+			<a href="#resume" class="mouse_scroll">
+					<div class="mouse">
+						<div class="wheel"></div>
+					</div>
+					<div>
+						<span class="m_scroll_arrows unu"></span>
+						<span class="m_scroll_arrows doi"></span>
+						<span class="m_scroll_arrows trei"></span>
+					</div>
+			</a>
+		</div>
+	</header>
 <!-- //шапка -->
 
 <!-- резюме -->
