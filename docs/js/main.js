@@ -1,9 +1,10 @@
 $(document).ready(function() {
 
-	//Мобильная навигация
-	$('.navigation-toggle').on('click', function(e){
-		e.preventDefault();
-		$('.navigation-list').toggleClass('navigation-list--open');
-	})
+	
+
+//slide2id - плавная прокрутка по ссылкам внутри страницы
+	$("nav a,a[href='#top'],a[rel='m_PageScroll2id'],a.PageScroll2id").mPageScroll2id({
+	    highlightSelector:"nav a"
+	});
 	
 });
