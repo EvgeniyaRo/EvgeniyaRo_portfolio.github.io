@@ -15,11 +15,36 @@ body {
 
 p {
 	font-size: 14px;
-	line-height: 24px;
-	color: #777;
+	line-height: 22px;
+	color: #000;
+	@media only screen and (min-width : 768px) {
+ 		font-size: 16px;
+		line-height: 28px;
+	}
 }
 
-
+.section{
+		padding-top: 35px;
+		padding-bottom: 40px;
+ 	@media only screen and (min-width : 768px) {
+ 		padding-top: 50px;
+		padding-bottom: 60px;
+	}
+	@media only screen and (min-width : 1200px) {
+ 		padding-top: 74px;
+		padding-bottom: 90px;
+	}
+}
+.section--bottom-line{
+	border-bottom: 1px solid #e9eff3;
+}
+.section--bg-laptop{
+	@media only screen and (min-width : 1490px) {
+		background-image: url(../img/bg/laptop.png);
+		background-repeat: no-repeat;
+		background-position: right 70%;
+	}
+}
 
 .block {
 	background: #FFDB4C;
