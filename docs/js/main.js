@@ -7,4 +7,7 @@ $(document).ready(function() {
 	    highlightSelector:"nav a"
 	});
 	
+
+//фильтр
+	$("#portfolio").mixItUp();
 });

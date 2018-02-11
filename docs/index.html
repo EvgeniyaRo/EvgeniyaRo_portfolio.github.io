@@ -53,7 +53,7 @@
 			</nav>
 			<div class="header__inner--center">
 				<div class="avatar avatar--shadow">
-					<img src="usercontent/img/p-s.jpg" alt="Родина Евгения">
+					<img src="usercontent/img/p-s2.jpg" alt="Родина Евгения">
 				</div>
 				<h1 class="header__title">
 					Родина Евгения
@@ -83,7 +83,7 @@
 			<!-- фото -->
 			<div class=" hidden-xs col-sm-2 col-lg-3">
 				<div class="avatar avatar--big">
-					<img src="usercontent/img/p-b.jpg" alt="Родина Евгения">
+					<img src="usercontent/img/p-b2.jpg" alt="Родина Евгения">
 				</div>
 			</div>
 			<!-- //фото -->
@@ -94,7 +94,7 @@
 					<strong>Евгения Родина</strong><br>
 					30 лет, Москва, Россия
 				</p>
-				<p>Занимаюсь версткой сайтов и посадочных страниц. Владею навыками работы с html, css, BEM-naming, bootstrap, java script, gitbash, github, nodejs.</p>
+				<p>Занимаюсь версткой сайтов и посадочных страниц, писем для рассылок. Владею навыками работы с html, css, BEM-naming, flex, less, bootstrap, java script, gitbash, github, nodejs.</p>
 			<!-- опыт и образование -->	
 				<div class="row">
 					<div class="col-sm-6">
@@ -105,7 +105,8 @@
 									2009 год - по настоящее время
 								</div>
 								<div class="difinition-list__descript">
-									<p>Электронная библиотека psychlib.ru. Верстка текста (world office, html, css), корректорская работа. Администрирование компьютеризированного читального зала</p>
+									<p>Электронная библиотека psychlib.ru. Верстка текста (world office, html, css), корректорская работа. Администрирование компьютеризированного читального зала.
+									Заказы по верстке страниц и писем на фрилансе.</p>
 								</div>
 							</li>
 						</ul>
@@ -142,10 +143,10 @@
 					</div>
 				</div>
 			<!-- //опыт и образование -->	
-				<div class="button">
+				<a class="button" download>
 					<i class="fa fa-download"></i>
 					Скачать резюме
-				</div>
+				</a>
 			</div>
 			<!-- //текст -->
 		</div>
@@ -156,59 +157,130 @@
 <div  id="portfolio" class="section section--padding-smaller section--bg-gear">
 	<div class="container">
 		<div class="heading heading--center">Мои работы</div>
+	
 	<!-- фильтр -->
-		<div class="filter">
-			<ul class="filter__block">
-				<li class="filter__element">
-					<span class="filter__button filter__button--active">все</span>
+		<div class="filter-my">
+			<ul class="filter-my__block">
+				<li class="filter-my__element">
+					<span class="filter-my__button filter-my__button--active filter" data-filter="all">все</span>
 				</li>
-				<li class="filter__element">
-					<span class="filter__button">HTML+CSS</span>
+				<li class="filter-my__element">
+					<span class="filter-my__button filter" data-filter=".html">HTML+CSS</span>
 				</li>
-				<li class="filter__element">
-					<span class="filter__button">bootstrap</span>
+				<li class="filter-my__element">
+					<span class="filter-my__button filter" data-filter=".bootstrap">bootstrap</span>
 				</li>
-				<li class="filter__element">
-					<span class="filter__button">учебные</span>
+				<li class="filter-my__element">
+					<span class="filter-my__button filter" data-filter=".learn">учебные</span>
 				</li>
-				<li class="filter__element">
-					<span class="filter__button">на заказ</span>
+				<li class="filter-my__element">
+					<span class="filter-my__button filter" data-filter=".work">на заказ</span>
 				</li>
 			</ul>
 		</div>
 	<!-- //фильтр -->
 	<!-- работы -->
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="block">
-					работа 1
+		<div class="row" id="portfolio">
+			<div class="col-sm-4 mix html learn">
+				<div class="portfolio-item">
+					<a href="https://evgeniyaro.github.io/organic/" target="_blanck" class="portfolio-item__img">
+						<div class="portfolio-item__img__hover">
+							<i class="fa fa-search" aria-hidden="true"></i>
+							<span>смотреть макет</span>
+						</div>
+						<img src="usercontent/img/project_organica.jpg" alt="Проект Органика">
+					</a>
+					<div class="portfolio-item__title">
+						<a href="https://evgeniyaro.github.io/organic/" target="_blanck">Учебный макет Organica</a>
+					</div>
+					<div class="portfolio-item__description">
+						Верстка одностраничного сайта по PSD макету.
+					</div>
 				</div>
 			</div>
-			<div class="col-sm-4">
-				<div class="block">
-					работа 2
+			<div class="col-sm-4 mix html bootstrap learn">
+				<div class="portfolio-item">
+					<a class="portfolio-item__img">
+						<div class="portfolio-item__img__hover">
+							<i class="fa fa-search" aria-hidden="true"></i>
+							<span>смотреть макет</span>
+						</div>
+						<img src="usercontent/img/project_apollo.jpg" alt="Проект Apollo">
+					</a>
+					<div class="portfolio-item__title">
+						<a href="#">Учебный макет Аполло</a>
+					</div>
+					<div class="portfolio-item__description">
+						Верстка лендинга хостинг компании. Мобильная адаптивность.
+					</div>
 				</div>
 			</div>
-			<div class="col-sm-4">
-				<div class="block">
-					работа 3
+			<div class="col-sm-4 mix html bootstrap learn">
+				<div class="portfolio-item">
+					<a class="portfolio-item__img">
+						<div class="portfolio-item__img__hover">
+							<i class="fa fa-search" aria-hidden="true"></i>
+							<span>смотреть макет</span>
+						</div>
+						<img src="usercontent/img/portfolio.jpg" alt="Проект Портфолио">
+					</a>
+					<div class="portfolio-item__title">
+						<a href="#">Личный сайт портфолио</a>
+					</div>
+					<div class="portfolio-item__description">
+						Верстка личного сайта портфолио на котором вы сейчас находитесь.
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="block">
-					работа 4
+			<div class="col-sm-4 mix html work">
+				<div class="portfolio-item">
+					<a href="http://mgik.org/structure/upravleniya-tsentry-otdely/vysshaya-shkola-politicheskoy-kultury/"  target="_blanck"  class="portfolio-item__img">
+						<div class="portfolio-item__img__hover">
+							<i class="fa fa-search" aria-hidden="true"></i>
+							<span>смотреть макет</span>
+						</div>
+						<img src="usercontent/img/project_noc.jpg" alt="Проект НОЦ">
+					</a>
+					<div class="portfolio-item__title">
+						<a href="http://mgik.org/structure/upravleniya-tsentry-otdely/vysshaya-shkola-politicheskoy-kultury/"  target="_blanck" >Страница факультета</a>
+					</div>
+					<div class="portfolio-item__description">
+						Верстка страницы факультета на сайте института.
+					</div>
 				</div>
 			</div>
-			<div class="col-sm-4">
-				<div class="block">
-					работа 5
+			<div class="col-sm-4 mix html work">
+				<div class="portfolio-item">
+					<a  href="http://psychlib.ru/mgppu/APp-2006/APp-208.htm#$p1"  target="_blanck" class="portfolio-item__img">
+						<div class="portfolio-item__img__hover">
+							<i class="fa fa-search" aria-hidden="true"></i>
+							<span>смотреть макет</span>
+						</div>
+						<img src="usercontent/img/lib.jpg" alt="Проект Книга">
+					</a>
+					<div class="portfolio-item__title">
+						<a  href="http://psychlib.ru/mgppu/APp-2006/APp-208.htm#$p1"  target="_blanck" >Книги в электронной библиотеке</a>
+					</div>
+					<div class="portfolio-item__description">
+						Верстка текста и таблиц для книг в электронной библиотеки.
+					</div>
 				</div>
 			</div>
-			<div class="col-sm-4">
-				<div class="block">
-					работа 6
+			<div class="col-sm-4 mix html work">
+				<div class="portfolio-item">
+					<a  href="http://psychlib.ru/mgppu/APp-2006/APp-208.htm#$p1"  target="_blanck" class="portfolio-item__img">
+						<div class="portfolio-item__img__hover">
+							<i class="fa fa-search" aria-hidden="true"></i>
+							<span>смотреть макет</span>
+						</div>
+						<img src="usercontent/img/lib.jpg" alt="Проект Книга">
+					</a>
+					<div class="portfolio-item__title">
+						<a  href="http://psychlib.ru/mgppu/APp-2006/APp-208.htm#$p1"  target="_blanck" >Книги в электронной библиотеке</a>
+					</div>
+					<div class="portfolio-item__description">
+						Верстка текста и таблиц для книг в электронной библиотеки.
+					</div>
 				</div>
 			</div>
 		</div>
@@ -266,6 +338,7 @@
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
 	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
+	<script src="libs/mixitup2/jquery.mixitup.min.js"></script>
  <!-- //Vendir scripts -->
 
 <!--Client scripts-->

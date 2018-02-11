@@ -1,0 +1,105 @@
+.portfolio-item{
+	margin: 0 auto;
+	margin-bottom: 40px;
+	max-width: 360px;
+ 	@media only screen and (min-width : 768px) {
+		
+	}
+}
+.portfolio-item__img{
+	position: relative;
+	display: block;
+	text-decoration: none;
+	background-image: url("../img/placeholders/project_placeholder.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 190px;
+	cursor: pointer;
+	overflow: hidden;
+	@media only screen and (min-width : 768px) {
+		min-height: 152.76px;
+		max-height: 203.69px;
+	}
+	@media only screen and (min-width : 1200px) {
+		min-height: 250px;
+	}
+}
+.portfolio-item__img:hover .portfolio-item__img__hover {
+		display: block;
+		top: 0;
+	}
+
+.portfolio-item__img__hover{
+	position: absolute;
+	top: 100%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 82, 194, 0.8);
+	color: #fff;
+	text-align: center;
+	-webkit-transition: top 0.5s ease-out;
+		-moz-transition: top 0.5s ease-out;
+		 -ms-transition: top 0.5s ease-out;
+		  -o-transition: top 0.5s ease-out;
+			 transition: top 0.5s ease-out;
+	 
+	
+	i{
+		display: block;
+		font-size: 64px;
+		margin-bottom: 15px;
+		position: absolute;
+		top: 35%;
+		left: 50%;
+		transform: translate(-50%, 0);
+		@media only screen and (min-width : 768px) {
+		font-size: 50px;
+		}
+		@media only screen and (min-width : 1200px) {
+		font-size: 64px;
+		margin-top: 60px;
+		position: static;
+		transform: translate(0%, 0%);
+		}
+	}
+	span{
+		display: none;
+		font-size: 26px;
+		@media only screen and (min-width : 1200px) {
+		display: inline-block;
+
+		}
+	}
+}
+
+.portfolio-item__title{
+	font-size: 20px;
+	font-weight: 700;
+	padding-top: 15px;
+	margin-bottom: 10px;
+	@media only screen and (min-width : 1200px) {
+		font-size: 24px;
+		padding-top: 25px;
+	}
+	a{
+		text-decoration: none;
+		color: #000;
+		border-bottom: 1px dotted #000;
+		&:hover, &:active, &:focus{
+			color: @blue;
+			border-bottom: 1px dotted @blue;
+		}
+
+	}
+}
+.portfolio-item__description{
+	font-size: 14px;
+	line-height: 20px;
+
+	@media only screen and (min-width : 1200px) {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
