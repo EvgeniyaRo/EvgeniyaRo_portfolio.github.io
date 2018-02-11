@@ -15,4 +15,15 @@ $(document).ready(function() {
 		activeClass:'filter-my__button--active'}
 	});
 
+// FancyBox - galery
+	$(".fancybox").fancybox({
+			// Default - with fix from scroll to top
+            helpers: {
+                overlay: {
+                    locked: false
+                }
+            }
+    });
+	// End of FancyBox - galery
+
 });
