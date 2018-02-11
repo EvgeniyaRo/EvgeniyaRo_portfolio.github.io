@@ -9,5 +9,10 @@ $(document).ready(function() {
 	
 
 //фильтр
-	$("#portfolio").mixItUp();
+	$("#portfolio").mixItUp({
+		controls: {
+		enable:true,
+		activeClass:'filter-my__button--active'}
+	});
+
 });
