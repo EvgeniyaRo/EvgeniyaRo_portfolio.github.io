@@ -470,11 +470,13 @@ a.mouse_scroll:focus {
   .filter-my__element {
     display: inline-block;
     margin-right: 0px;
+    margin-bottom: 0;
   }
 }
 @media only screen and (min-width: 1200px) {
   .filter-my__element {
     margin-right: 15px;
+    margin-bottom: 0;
   }
   .filter-my__element:last-child {
     margin-right: 0;
