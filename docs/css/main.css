@@ -452,7 +452,7 @@ a.mouse_scroll:focus {
 @media only screen and (min-width: 768px) {
   .filter-my {
     padding-top: 8px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
   }
 }
 .filter-my__block {
