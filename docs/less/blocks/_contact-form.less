@@ -1,7 +1,8 @@
 .contact-form{
-
+	color: #fff;
 }
 .contact-form__input{
+	outline:none;
 	color: #00599a;
 	font-size: 16px;
 	font-weight: 700;
@@ -29,6 +30,7 @@
 	}
 }
 .contact-form__textarea{
+	outline:none;
 	color: #00599a;
 	font-size: 16px;
 	font-weight: 700;
@@ -106,5 +108,31 @@
 	position: absolute;
 	left: 65%;
 	top: 85%;
+	}
+}
+label.error{
+	position: relative;
+	background-color: #ad1457;
+	display: block;
+	border-radius: 8px;
+	padding: 5px 15px;
+	margin-top: 0;
+	margin-bottom: 15px;
+	font-weight: 700;
+
+	@conersize:12px;
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: 100%;
+		left: 40px;
+
+		margin-left: -@conersize;
+		width: 0;
+		height: 0;
+		border-bottom: @conersize solid #ad1457;
+		border-right: @conersize solid transparent;
+		border-left: @conersize solid transparent;
+
 	}
 }
