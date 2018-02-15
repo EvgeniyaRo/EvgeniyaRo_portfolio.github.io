@@ -1,0 +1,110 @@
+.contact-form{
+
+}
+.contact-form__input{
+	color: #00599a;
+	font-size: 16px;
+	font-weight: 700;
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 13px 22px;
+	border-radius: 8px;
+	border: none;
+	border: 3px solid #fff;
+	&:hover, &:active, &:focus{
+		border: 3px solid #a2d1f4;
+	}
+	-webkit-transition: border-color 0.3s ease-in;
+	  -moz-transition: border-color 0.3s ease-in;
+	   -ms-transition: border-color 0.3s ease-in;
+	    -o-transition: border-color 0.3s ease-in;
+	       transition: border-color 0.3s ease-in;
+}
+.contact-form__input--half{
+	float: left;
+	width: 49%;
+	margin-right: 2%;
+	&:last-of-type{
+		margin-right: 0;
+	}
+}
+.contact-form__textarea{
+	color: #00599a;
+	font-size: 16px;
+	font-weight: 700;
+	width: 100%;
+	height: 128px;
+	border-radius: 8px;
+	border: none;
+	background-color: #fff;
+	padding: 13px 22px;
+	margin-bottom: 5px;
+	border: 3px solid #fff;
+	-webkit-transition: border-color 0.3s ease-in;
+	  -moz-transition: border-color 0.3s ease-in;
+	   -ms-transition: border-color 0.3s ease-in;
+	    -o-transition: border-color 0.3s ease-in;
+	       transition: border-color 0.3s ease-in;
+	&:hover, &:active, &:focus{
+		border: 3px solid #a2d1f4;
+	}
+}
+.contact-form__submit{
+	display: block;
+	font-size: 18px;
+	font-weight: 700;
+	width: 100%;
+	padding: 8px 47px 12px;
+	background-color: transparent;
+	color: #fff;
+	border-radius: 40px;
+	border: 3px solid #fff;
+	text-align: center;
+	-webkit-transition: all 0.3s ease-in;
+	  -moz-transition: all 0.3s ease-in;
+	   -ms-transition: all 0.3s ease-in;
+	    -o-transition: all 0.3s ease-in;
+	       transition: all 0.3s ease-in;
+	&:hover {
+		color: #065a97;
+		background-color: #fff;
+	}
+	&:active{
+		color: @yellow;
+		background-color: transparent;
+		border: 3px solid @yellow;
+	}
+	@media only screen and (min-width : 768px) {
+ 		font-size: 20px;
+ 		width: auto;
+ 		display: inline-block;
+	}
+	@media only screen and (min-width : 1200px) {
+ 		font-size: 22px;
+	}
+}
+.contact-form__bg-pencil{
+	position: relative;
+	// background-image: url(img/bg/pencil.png);
+	// background-repeat: no-repeat;
+	// background-position: bottom right;
+}
+.contact-form__bg-pencil:after{
+	@media only screen and (min-width : 1200px) {content: "";
+	display: block;
+	position: absolute;
+	left: 75%;
+	top: 75%;
+	width: 203px;
+	height: 153px;
+	background-image: url(../img/bg/pencil.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	}
+	@media only screen and (min-width : 768px) {content: "";
+	display: block;
+	position: absolute;
+	left: 65%;
+	top: 85%;
+	}
+}
