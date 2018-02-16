@@ -447,7 +447,7 @@ a.mouse_scroll:focus {
   background-color: #fff;
 }
 .button:active,
-.button:active {
+.button:focus {
   text-decoration: none;
   color: #ffe400;
   background-color: #0052c2;
