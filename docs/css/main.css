@@ -429,6 +429,11 @@ a.mouse_scroll:focus {
   background-color: #0052c2;
   color: #fff;
   border-radius: 60px;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 .button .fa {
   margin-right: 5px;
@@ -441,6 +446,7 @@ a.mouse_scroll:focus {
   color: #0052c2;
   background-color: #fff;
 }
+.button:active,
 .button:active {
   text-decoration: none;
   color: #ffe400;
@@ -706,6 +712,7 @@ a.mouse_scroll:focus {
 }
 .contact-form__submit {
   display: block;
+  outline: none;
   font-size: 18px;
   font-weight: 700;
   width: 100%;

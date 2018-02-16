@@ -8,6 +8,11 @@
 	background-color: @blue;
 	color: #fff;
 	border-radius: 60px;
+	-webkit-transition: all 0.3s ease-in;
+	  -moz-transition: all 0.3s ease-in;
+	   -ms-transition: all 0.3s ease-in;
+	    -o-transition: all 0.3s ease-in;
+	       transition: all 0.3s ease-in;
 
 	.fa {
 		 margin-right: 5px;
@@ -22,7 +27,7 @@
 		color: @blue;
 		background-color: #fff;
 	}
-	&:active{
+	&:active, &:active{
 		text-decoration: none;
 		color: @yellow;
 		background-color: @blue;
