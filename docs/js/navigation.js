@@ -1,36 +1,37 @@
 $(document).ready(function() {
 
-	var navigationToggleButton = $('.navigation-toggle');
+	var navigationToggleButton = $('#navigation-button');
 	var navigationToggleIcon = $('.navigation-toggle .fa');
 	var navBlock = $('.navigation-list');
 	var navBlockOpen = 'navigation-list--open';
 	var navLink = $('.navigation-list a');
-	var iconNav = 'fa-bars';
-	var iconClose = 'fa-times';
+	// var iconNav = 'fa-bars';
+	// var iconClose = 'fa-times';
 
 
-	//Мобильная навигация
+	// События по клику на иконку
 	navigationToggleButton.on('click', function(e){
 		e.preventDefault();
 		navBlock.toggleClass(navBlockOpen);
-		// меняем иконку меню
-		if(navigationToggleIcon.hasClass(iconNav)){
-			navigationToggleIcon.removeClass(iconNav);
-			navigationToggleIcon.addClass(iconClose);
-		}else{
-			navigationToggleIcon.removeClass(iconClose);
-			navigationToggleIcon.addClass(iconNav);
-		}
-		
+		navButtonToggle();
 	})
-	
 
-	//закрытие меню при нажатии на ссылку
+	// События по клику на ссылки
 	navLink.on('click', function(){
-		navBlock.removeClass('navigation-list--open');
-		navigationToggleIcon.removeClass('fa-times');
-		navigationToggleIcon.addClass('fa-bars');
+		if ( navBlock.hasClass(navBlockOpen) ) {
+			navButtonToggle();
+		}
+		navBlock.removeClass(navBlockOpen);
 	})
+
+	// Функция для анимации иконки
+	function navButtonToggle(){
+		if ( navigationToggleButton.hasClass("active")) {
+			navigationToggleButton.removeClass("active");
+		} else {
+			navigationToggleButton.addClass("active");
+		}
+	}
 
 	
 });
