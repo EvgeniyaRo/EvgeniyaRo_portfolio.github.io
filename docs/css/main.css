@@ -797,6 +797,9 @@ label.error:after {
   border-right: 12px solid transparent;
   border-left: 12px solid transparent;
 }
+#answer {
+  color: #fff;
+}
 .copyright {
   background-color: #003f6d;
   padding-top: 35px;
